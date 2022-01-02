@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Live Site](https://61d18191eb07cb59e9095b7a--distracted-hamilton-6ab835.netlify.app/tech/launch-vehicle)
+- Live Site URL: [Live Site](https://distracted-hamilton-6ab835.netlify.app/tech/launch-vehicle)
 
 ## My process
 
