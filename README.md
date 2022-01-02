@@ -29,8 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Live Site](https://61d18191eb07cb59e9095b7a--distracted-hamilton-6ab835.netlify.app/tech/launch-vehicle)
 
 ## My process
 

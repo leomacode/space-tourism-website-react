@@ -21,6 +21,10 @@ function App() {
       path = "crew";
     }
 
+    if (path.includes("tech")) {
+      path = "tech";
+    }
+
     setBackGroundClass(path);
   }, [pathname]);
 
