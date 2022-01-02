@@ -1,0 +1,91 @@
+.destination {
+  background-image: url("./../../assets/destination/background-destination-mobile.jpg");
+  background-size: cover;
+}
+
+@media (min-width: 35em) {
+  .destination {
+    background-image: url("./../../assets/destination/background-destination-tablet.jpg");
+  }
+}
+
+@media (min-width: 45em) {
+  .destination {
+    background-image: url("./../../assets/destination/background-destination-desktop.jpg");
+  }
+}
+
+main {
+  text-align: center;
+}
+
+.img img {
+  width: 50vw;
+  margin: 2rem auto;
+}
+
+.tab-list {
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.main-content > .text::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 100%;
+  background: hsl(var(--color-white) / 0.35);
+  margin: 2rem 0;
+}
+@media (min-width: 35rem) {
+  .text::after {
+    margin-top: 3rem;
+  }
+}
+
+.figures {
+  flex-direction: column;
+}
+
+@media (min-width: 35rem) {
+  .figures {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+
+@media (min-width: 45rem) {
+  .content {
+    display: flex;
+    gap: clamp(1rem, 10vw, 4rem);
+    align-items: flex-end;
+  }
+
+  .img {
+    flex: 1;
+  }
+
+  .img img {
+    width: 100%;
+    margin: 0;
+  }
+
+  .main-content {
+    flex: 1;
+    text-align: left;
+  }
+
+  .tab-list {
+    justify-content: start;
+    gap: 3rem;
+  }
+
+  .figures {
+    justify-content: start;
+    gap: clamp(3rem, 7vw, 6rem);
+  }
+
+  .main-content > .text > p {
+    margin-left: 0;
+  }
+}

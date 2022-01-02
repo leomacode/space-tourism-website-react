@@ -1,0 +1,20 @@
+.numbered-title {
+  font-family: var(--ff-sans-cond);
+  font-size: var(--fs-500);
+  text-transform: uppercase;
+  letter-spacing: 4.75px;
+  color: hsl(var(--color-white));
+}
+.numbered-title span {
+  margin-right: 0.5em;
+  color: hsl(var(--color-light));
+  font-weight: 700;
+  color: hsl(var(--color-white) / 0.25);
+}
+
+@media (min-width: 35rem) {
+  .numbered-title {
+    text-align: left;
+    margin: 2rem 0;
+  }
+}

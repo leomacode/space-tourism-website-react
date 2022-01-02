@@ -1,0 +1,129 @@
+.crew {
+  background-image: url("./../../assets/crew/background-crew-mobile.jpg");
+  background-size: cover;
+}
+
+.grid-crew {
+  padding-inline: 2rem;
+  display: grid;
+  grid-template-areas:
+    "title"
+    "image"
+    "dot-indicators"
+    "content";
+  grid-auto-rows: minmax(min-content, max-content);
+  gap: 2rem;
+}
+
+.grid-crew > .numbered-title {
+  grid-area: title;
+  text-align: center;
+  font-size: var(--fs-600);
+}
+
+.grid-crew > .img {
+  width: 90%;
+  grid-area: image;
+  border-bottom: 1px solid hsl(var(--color-white) / 0.25);
+}
+
+.grid-crew > .img img {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.grid-crew > .dot-indicators {
+  grid-area: dot-indicators;
+  padding: 3rem 0;
+}
+.dot-indicators > * {
+  padding: 0.3rem;
+}
+
+.grid-crew > .text {
+  grid-area: content;
+  display: grid;
+  gap: 2rem;
+}
+
+.grid-crew > .text > h2 > span {
+  color: hsl(var(--color-white) / 0.75);
+  margin: 1rem 0;
+}
+
+@media (min-width: 35em) {
+  .crew {
+    background-image: url("./../../assets/crew/background-crew-tablet.jpg");
+  }
+
+  .grid-crew {
+    display: grid;
+    grid-template-areas:
+      "title"
+      "content"
+      "dot-indicators"
+      "image";
+    grid-template-rows: repeat(3, minmax(min-content, max-content)) auto;
+  }
+
+  .numbered-title {
+    justify-self: start;
+    margin-top: 2rem;
+  }
+
+  .text > p {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+
+  .grid-crew > .img {
+    border-bottom: none;
+    align-self: end;
+  }
+
+  .grid-crew > .img > img {
+    max-height: 90vh;
+  }
+}
+
+@media (min-width: 45em) {
+  .crew {
+    background-image: url("./../../assets/crew/background-crew-desktop.jpg");
+  }
+
+  .grid-crew {
+    grid-template-areas:
+      ". title image image"
+      ". content image image"
+      ". dot-indicators image image";
+    grid-template-rows: repeat(3, minmax(min-content, max-content));
+    gap: min(6vw, 6rem);
+    padding-inline: 1rem;
+    align-content: end;
+  }
+
+  .grid-crew > .numbered-title {
+    justify-self: start;
+  }
+
+  .grid-crew > .text > p {
+    margin-left: 0;
+    max-width: 100%;
+  }
+  .grid-crew > .dot-indicators {
+    justify-self: start;
+  }
+
+  .img img {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 45rem) and (max-width: 53rem) {
+  .grid-crew > .numbered-title > span {
+    font-size: 1.7rem;
+  }
+  .grid-crew > .numbered-title {
+    font-size: 1.5rem;
+  }
+}
